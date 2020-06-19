@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sydney's Home Page</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+        .draggableImage {
+            position: absolute;
+            z-index: 9;
+            cursor: move;
+        }
+    </style>
+    
+    
+</head>
+
+    
+    <body> 
+    <div class="header">
+        <h1>Interactive Internet Art</h1>
+        <p>Projects Completed Summer 2020</p>
+    </div>
+    
+      <div class="navbar">
+ <a href="index.html" class="active">Home</a>
+        <a href="index_CG.html">Circle Generator</a>
+        
+        <a href="index_PI.html">Painting with Images</a>
+           
+        <a href="index_BO.html">Bouncing Objects</a>
+        <a href="#" class="right">Social Media Link</a>
+    </div>
+    <div class="row">
+        <div class="side clearfix">
+            <h2>Project 2</h2>
+
+            <p>Dress up Rain!</p>
+            <h3>Web page for projects</h3>
+        </div>
+        <div class="main clearfix">
+            <h2>Painting with Images</h2>
+            <div id='myContainer'></div>
+            
+<!--
+        <button type="button" value="1" onclick="changeImage(this.value)" class="button">
+            <img src="flower1.png" width="50px">
+        </button>
+        <button type="button" value="2" onclick="changeImage(this.value)" class="button">
+            <img src="flower2.png" width="50px">
+        </button>
+                    <button type="button" value="2" onclick="changeImage(this.value)" class="button">
+            <img src="flower3.png" width="50px">
+        </button>
+                    <button type="button" value="2" onclick="changeImage(this.value)" class="button">
+            <img src="flower4.png" width="50px">
+        </button>
+                    <button type="button" value="2" onclick="changeImage(this.value)" class="button">
+            <img src="flower5.png" width="50px">
+        </button>
+            <button type="button" value="2" onclick="changeImage(this.value)" class="button">
+            <img src="flower6.png" width="50px">
+        </button>
+            </div>
+-->
+
+         
+            <div class="draggableImage" id="drag1" style="left: height; top: width;">
+                <img src="flower1.png" width="680px">
+            </div>
+             <div class="draggableImage" id="drag0" style="left: height; top: width;">
+                <img src="flower0.png" width="680px">
+            </div>
+            <div class="draggableImage" id="drag2" style="left: height; top: width;">
+                <img src="flower2.png" width="680px">
+            </div>
+             </div>
+
+
+ 
+       
+            
+
+<!--
+        <button type="button" value="10" onclick="changeSize(this.value)" class="button">+</button>
+           <span id="sizeDimension"></span>
+        <button type="button" value="-10" onclick="changeSize(this.value)" class="button">-</button>
+-->
+<!--
+      
+            <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+<br>
+<img id="drag1" src="flower2.png" width="100px" draggable="true" ondragstart="drag(event)" width="336" height="69">
+            
+-->
+            
+            
+      </div>
+  
+    <div class="footer">
+        <h5>Copyright &copy; 2020 Sydney Whitehead</h5>
+    </div>
+    
+    <script src="p5.js"></script>
+    <script src="app_PI.js"></script>
+    
+</body>
+</html>
